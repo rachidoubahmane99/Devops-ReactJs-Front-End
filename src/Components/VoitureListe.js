@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
-import {Card ,Table} from 'react-bootstrap';
+import {Card ,Table,ButtonGroup,Button} from 'react-bootstrap';
 import axios from 'axios';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faList } from '@fortawesome/free-solid-svg-icons';
+import { faEdit,faTrash } from '@fortawesome/free-solid-svg-icons';
 export default class VoitureListe extends Component {
         constructor(props) { super(props);
             this.state={
@@ -42,6 +45,12 @@ export default class VoitureListe extends Component {
                 <td>{voiture.immatricule}</td>
                 <td>{voiture.annee}</td>
                 <td>{voiture.prix}</td>
+                <td>
+                    <ButtonGroup>
+                        <Button size="sm" variant="outline-primary"><FontAwesomeIcon icon={faEdit}/></Button>{' '}
+                        <Button size="sm" variant="outline-danger"><FontAwesomeIcon icon={faTrash}/></Button>
+                    </ButtonGroup>
+                </td>
                     
                 </tr>
                 ))
