@@ -8,8 +8,8 @@ class Footer extends React.Component {
            <Container>
            <Col lg={12} className="text-center text-muted">
            <div>
-           {fullYear}-{fullYear+1}, All Rights Reserved by Master MIOLA
-           </div>
+           {fullYear}-{fullYear+1}, All Rights Reserved by Master MIOLA By Rachid <3
+           </div> 
            </Col>
            </Container>
            </Navbar>
